@@ -9,6 +9,6 @@ public class Score : MonoBehaviour
     void Update()
     {
         // Debug.Log(player.position.z);     
-        score.text = player.position.z.ToString(); 
+        score.text = player.position.z.ToString("0"); 
     }
 }
