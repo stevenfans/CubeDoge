@@ -24,7 +24,10 @@ public class PlayerMovement : MonoBehaviour
         }
         if(Input.GetKey("a")){
             rb.AddForce(-sidewayForce*Time.deltaTime,0,0,ForceMode.VelocityChange); 
-            
+        }
+        if(Input.GetKey("a")==false && Input.GetKey("d")==false)
+        {
+            rb.velocity = new Vector3(0,0, rb.velocity.z);
         }
     }
 }
