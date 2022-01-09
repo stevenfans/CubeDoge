@@ -7,7 +7,9 @@ public class PlayerCollision : MonoBehaviour
     void OnCollisionEnter(Collision collisionInfo){
 
         if (collisionInfo.collider.tag == "Obstacle"){
+            Debug.Log("hit block");
             movement.enabled = false; 
+            FindObjectOfType<GameManager>().EndGame(); 
         }
     }
 }
