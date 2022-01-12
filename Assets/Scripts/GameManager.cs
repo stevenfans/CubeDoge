@@ -11,11 +11,16 @@ public class GameManager : MonoBehaviour
             Debug.Log("Game Over"); 
             gameHasEnded = true; 
             Invoke("Restart",2f);
-         }
+        }
      }
 
      void Restart()
      {
          SceneManager.LoadScene(SceneManager.GetActiveScene().name); 
+     }
+
+     public void CompleteGame()
+     {
+         Debug.Log("Level Completed");
      }
 }
