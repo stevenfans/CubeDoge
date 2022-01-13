@@ -4,6 +4,8 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     bool gameHasEnded = false; 
+    public GameObject   completeLevelUI; 
+
      public void EndGame(){
 
          if (gameHasEnded==false)
@@ -22,5 +24,6 @@ public class GameManager : MonoBehaviour
      public void CompleteGame()
      {
          Debug.Log("Level Completed");
+         completeLevelUI.SetActive(true); 
      }
 }

@@ -348,6 +348,7 @@
 "Assets/Scripts/EndTrigger.cs"
 "Assets/Scripts/FollowPlayer.cs"
 "Assets/Scripts/GameManager.cs"
+"Assets/Scripts/LevelComplete.cs"
 "Assets/Scripts/PlayerCollision.cs"
 "Assets/Scripts/PlayerMovement.cs"
 "Assets/Scripts/Score.cs"
